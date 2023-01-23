@@ -1,10 +1,11 @@
 import cv2
-
+#To recognize a face in a video, you need to drop the video into the vids folder
+#To exit the application, press "Q"
 def face_capture():
     cascade_path= 'filters\haarcascade_frontalface_default.xml'
 
     clf=cv2.CascadeClassifier(cascade_path)
-    camera=cv2.VideoCapture('vids\Camera.mp4')
+    camera=cv2.VideoCapture('vids\VidsName.mp4')
 
     while True:
         _, frame = camera.read()
